@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Agrokasa - Home</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="http://www.laterminalestudios.com/" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/darkgreen.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+
+
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				.scroll			= reveal on scroll up (should be not used with topBar)
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky  dark clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav" class="">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- BUTTONS -->
+						<ul class="float-right nav nav-pills nav-second-main">
+
+							<li>
+								<a href="#" class="text-center text-white" title="Lang">
+									<i class="glyphicon glyphicon-globe"></i>
+								</a>
+							</li>
+
+						</ul>
+						<!-- /BUTTONS -->
+
+
+						<!-- Logo -->
+						<a class="logo float-left" href="index.html">
+							<img src="assets/images/_smarty/logo_light.png" alt="Agrokasa" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+
+
+							+ ON SCROLL, CHANGE COLOR TO SUBMENU DROPDOWNS [optional - high detail oriented].
+								Useful on transparent header where usualy you use large darker image and on scroll
+								you want to switch to light because the rest of your page is light.
+								- You can create your custom CSS class for switch - we use in this demo submenu-dark as a default
+								  and will turn to default white on scroll (if empty, no class will be added)
+								NOTE: data-switch-default must be the default class already added to the div.
+
+							data-switch-default="submenu-dark" 
+							data-switch-scroll=""
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark" data-switch-default="submenu-dark" data-switch-scroll="">
+							<nav class="nav-main">
+
+								<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+
+
+									+ MENU ANIMATIONS
+										.nav-animate-fadeIn
+										.nav-animate-fadeInUp
+										.nav-animate-bounceIn
+										.nav-animate-bounceInUp
+										.nav-animate-flipInX
+										.nav-animate-flipInY
+										.nav-animate-zoomIn
+										.nav-animate-slideInUp
+
+										.nav-hover-animate = animate text on hover
+								-->
+
+								<ul id="topMain" class="nav nav-hover-animate nav-pills">
+									<li class="dropdown"><!-- QUIENES SOMOS -->
+										<a class="dropdown-toggle" href="quienes-somos.html">
+											QUIENES SOMOS
+										</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown"><a href="#">QUE HACEMOS</a></li>
+											<li><a href="#">PROCESOS</a></li>
+											<li><a href="#">SOSTENIBILIDAD</a></li>
+											<li><a href="#">CULTURA DE INNOVACIÓN</a></li>
+											<li class="divider"></li>
+											<li class="dropdown"><!-- GALERÍA -->
+												<a class="dropdown-toggle" href="#">
+													GALERÍA
+												</a>
+												<ul class="dropdown-menu">
+													<li><a class="" href="video-gallery.html">VIDEOS</a></li>
+													<li><a href="photo-gallery.html">FOTOS</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+									<!-- PRODUCTOS -->
+										<a class="dropdown-toggle" href="#">
+											PRODUCTOS
+										</a>
+										<ul class="dropdown-menu">
+                                            <li class="dropdown"><a class="" href="prod-palta.html">PALTA</a></li>
+                                            <li><a href="prod-esparrago.html">ESPÁRRAGO</a></li>
+                                            <li><a href="prod-uva.html">UVA</a></li>
+                                            <li><a href="prod-arandano.html">ARÁNDANO</a></li>
+                                            <li class="divider"></li>
+											<li><a class="dropdown-toggle" href="#">EXPORTACIONES</a>
+													<ul class="dropdown-menu">
+														<li class="dropdown"><a class="" href="#">MERCADOS</a></li>
+														<li><a href="#">PRESENTACIONES</a></li>
+														<li><a href="#">ESTADÍSTICAS</a></li>
+														<li><a href="#">PROYECCIONES</a></li>
+													</ul>
+											</li>
+                                        </ul>
+									</li>
+									<li class="dropdown">
+									<!-- FUNDOS -->
+										<a class="dropdown-toggle" href="#">
+											FUNDOS
+										</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown">
+												<a class="dropdown-toggle" href="#">
+													GRANJAS
+												</a>
+												<ul class="dropdown-menu">
+													<li><a href="la-catalina.html">LA CATALINA</a></li>
+													<li><a href="santa-rita.html">SANTA RITA</a></li>
+													<li><a href="las-mercedes.html">LAS MERCEDES</a></li>
+												</ul>
+											</li>
+                                            <li class="dropdown">
+												<a class="dropdown-toggle" href="#">
+													EMPACADORAS
+												</a>
+												<ul class="dropdown-menu">
+													<li><a href="#">LA CATALINA</a></li>
+													<li><a href="#">SANTA RITA</a></li>
+													<li><a href="#">LAS MERCEDES</a></li>
+												</ul>
+											</li>
+
+
+										</ul>
+									</li>
+ 
+                                        
+									<li class=""><!-- RESPONSABILIDAD SOCIAL -->
+										<a class="" href="responsabilidad-social.html">
+											RESPONSABILIDAD SOCIAL
+										</a>
+									</li>
+
+									<li class="">
+										<a class="" href="calendario.html">CALENDARIO</a>
+									</li>
+									
+									<li class=""><!-- RESPONSABILIDAD SOCIAL -->
+										<a class="" href="contacto.html">
+											CONTACTO
+										</a>
+									</li>
+
+
+
+									<!-- 
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+
+<!-- VIDEO -->
+
+<section class="section-video section-lg height-70" style="">
+	<div class="overlay dark-6"><!-- dark overlay [1 to 9 opacity] --></div>
+
+	<div class="section-container-video" style="margin-top: 0; top: 0;">
+
+		<video poster="assets/videos/back.jpg" preload="auto" loop autoplay muted>
+			<source src="assets/videos/back.webm" type="video/webm" />
+			<source src="assets/videos/back.mp4" type="video/mp4" />
+		</video>
+
+	</div>
+
+	<div class="container">
+
+	</div>
+
+</section>
+
+
+			<!-- START -->
+			<section class="pt-0 pb-0" style="background-color: #fff;">
+		
+				<div class="container text-center">
+					
+					<div class="clearfix pt-30 pb-30">
+						<h1 class="m-0 fs-40 text-dark fw-600 text-green" data-bgtext="Agrokasa">GENERANDO BIENESTAR PARA EL MUNDO</h1>
+						<p class="lead fs-20 text-dark mb-0">Somos la empresa agroindustrial peruana líder en el mundo, comprometidos con el cultivo y la comercialización de productos agrícolas frescos de la más alta calidad. Hemos alcanzado esta posición al ser especialistas, enfocando nuestros esfuerzos en un número limitado de productos y manteniendo el control de nuestro volumen de producción, para conservar nuestro compromiso con entregar calidad que genere bienestar.</p>
+
+					</div>
+
+
+				</div>
+
+			</section>
+			<!-- /START -->
+
+
+
+
+
+
+
+			<!-- Diagonal Top-->
+			<section class="b-0 mt-6 mb-6 pt-0 pb-0">
+				<a href="prod-palta.html"><div class="leftTriangle invert hidden-md-down" style="background-image: url(assets/images/pics/GALERIA-PALTA/_KIK0630.jpg);background-size: cover;"><!-- trianble background --><div class="overlay dark-4"><!-- dark overlay [1 to 9 opacity] --></div></div></a>
+				<a href="prod-esparrago.html"><div class="rightTriangle invert hidden-md-down" style="background-image: url(assets/images/pics/GALERIA-ESPARRAGOS/008.jpg);background-size:cover;"><!-- trianble background --><div class="overlay dark-4"><!-- dark overlay [1 to 9 opacity] --></div></div></a>
+				
+				<div class="container">
+					
+					<div class="row text-right text-md-center pt-0 pb-0">
+						
+						<div class="col-lg-6 text-left text-md-center pt-0 pb-0">
+
+							<a href="prod-palta.html" class="mt-30 mb-30 d-block text-white pt-10 pb-20">
+							
+								<h1 class="mb-0 fs-70 fw-600 text-white pt-0 pb-0">Palta</h1>
+
+							</a>
+
+						</div>
+
+						<div class="col-lg-6 text-right text-md-center pt-0 pb-0">
+
+							<a href="prod-esparrago.html" class="mt-30 mb-30 d-block text-white pt-10 pb-20">
+								
+								<h1 class="mb-0 fs-70 fw-600 text-white pt-0 pb-0">Espárrago</h1>
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+			<!-- /Packages ; Main Multipurpose -->
+
+
+
+			<hr class="hidden-md-up">
+
+
+
+
+			<!-- Diagonal bottom -->
+			<section class="b-0 mt-6 mb-0 pt-0 pb-0">
+				<a href="prod-arandano.html"><div class="rightTriangle hidden-md-down" style="background-image: url(assets/images/pics/GALERIA-ARANDANO/004.jpg);background-size:cover;right:-50.35%;"><!-- trianble background --><div class="overlay dark-4"><!-- dark overlay [1 to 9 opacity] --></div></div></a>
+				<a href="prod-uva.html"><div class="leftTriangle hidden-md-down" style="background-image: url(assets/images/pics/GALERIA-DE-UVA/Sugraone-seedless/_DSC1301.jpg);background-size:cover;background-position:-100px;left:-50.15%;"><!-- trianble background --><div class="overlay dark-4"><!-- dark overlay [1 to 9 opacity] --></div></div></a>
+
+				<div class="container">
+					
+					<div class="row text-right text-md-center pt-0 pb-0">
+						
+						<div class="col-lg-6 order-lg-2 order-md-1 pt-0 pb-0">
+
+							<a href="prod-arandano.html" class="mt-30 mb-30 d-block text-white pt-10 pb-10">
+							
+								<h1 class="mb-0 fs-70 fw-600 text-white pt-0 pb-0">Arándano</h1>
+							</a>
+
+						</div>
+
+						<div class="col-lg-6 order-lg-1 order-md-2 pt-0 pb-0">
+
+							<a href="prod-uva.html" class="mt-30 mb-30 text-left text-md-center d-block text-white pt-10 pb-10">
+								
+								<h1 class="mb-0 fs-70 fw-600 text-white pt-0 pb-0">Uva</h1>
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+			<!-- /eCommerce ; Onepage -->
+
+
+
+<section class="parallax parallax-2 mt-80 h-400" style="background-image:url(assets/images/pics/GALERIA-PALTA/_KIK8882.jpg);">
+	<div class="overlay dark-3"><!-- dark overlay [1 to 9 opacity] --></div>
+
+	<div class="container">
+
+
+	</div>
+
+</section>
+
+			
+			
+			
+			
+<section class="pt-0 pb-0" style="margin-top:-206px; position:relative;">
+	<div class="container pt-0 pb-0" style="z-index:100;">
+		
+		<div class="row category-grid pt-0 pb-0 text-center">
+
+						<div class="col-md-4 col-sm-6 col-xs-12 pt-0 pb-0">
+							<div class="card">
+								<div class="card-block bg-light">
+									<h3 href="#" class="text-black fs-20 fw-600 mb-20 block">TRAYECTORIA</h3>
+									<p class="fs-15 mb-20 text-black">Enfocamos nuestra experiencia de años y conocimiento técnico en una oferta limitada de productos de primera.</p>
+								</div><div class="card-block pl-0 pr-0 bg-green pt-10 pb-10">
+									<a href="#" class="text-white fs-15">VER MÁS INFORMACIÓN</a>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12 pt-0 pb-0">
+							<div class="card">
+								<div class="card-block bg-light">
+									<h3 href="#" class="text-black fs-20 fw-600 mb-20 block">INVESTIGACIÓN & DESARROLLO</h3>
+									<p class="fs-15 mb-20 text-black">Enfocamos nuestra experiencia de años y conocimiento técnico en una oferta limitada de productos de primera.</p>
+								</div><div class="card-block pl-0 pr-0 bg-green pt-10 pb-10">
+									<a href="#" class="text-white fs-15">VER MÁS INFORMACIÓN</a>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12 pt-0 pb-0">
+							<div class="card">
+								<div class="card-block bg-light">
+									<h3 href="#" class="text-black fs-20 fw-600 mb-20 block">SOSTENIBILIDAD TRANSVERSAL</h3>
+									<p class="fs-15 mb-20 text-black">Enfocamos nuestra experiencia de años y conocimiento técnico en una oferta limitada de productos de primera.</p>
+								</div><div class="card-block pl-0 pr-0 bg-green pt-10 pb-10">
+									<a href="#" class="text-white fs-15">VER MÁS INFORMACIÓN</a>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+		
+		
+	</div>
+</section>
+
+
+
+
+
+
+
+			
+
+
+
+
+			
+			<!-- FOOTER -->
+<footer id="footer">
+	<div class="container">
+
+		<div class="row">
+
+			<!-- col #1 -->
+			<div class="col-md-6 col-sm-6 hidden-sm hidden-xs-down">
+
+				<div class="row">
+
+					<div class="col-md-6">
+						<h4 class="letter-spacing-1">ESTRATEGIA</h4>
+						<ul class="list-unstyled">
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Nuestra Estrategia</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Nuestro Mercado</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Nuestras Marcas</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Visión y Misión</a></li>
+
+						<h4 class="letter-spacing-1 pt-20">SERVICIOS</h4>
+	
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Productos Frescos</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Empacado</a></li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-6">
+						<h4 class="letter-spacing-1">CERTIFICACIONES</h4>
+						<ul class="list-unstyled">
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> GAP Primus Lab</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> BRC Global Standard Food</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> BASC Security Standard</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Globalgap</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> Tesco Nurture NSF-CMI</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> HACCP - GMP</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> LEAF NSF - CMI</a></li>
+							<li><a class="block" href="#"><i class="fa fa-angle-right"></i> The Global Compact. PNUD Peru</a></li>
+						</ul>
+					</div>
+
+
+				</div>
+
+			</div>
+			<!-- /col #1 -->
+			
+			
+			<!-- col #2 -->
+			<div class="spaced col-md-6 col-sm-6 text-center">
+				
+				
+
+				<h2 class="mb-10">(800) 123-4567</h2>
+				<h2 class="mt-0">
+					contacto@agrokasa.com
+				</h2>
+				
+				<!-- Footer Logo -->
+				<p class="text-center col-md-12">
+					<img class="footer-logo" src="assets/images/_smarty/logo_light.png" alt="" style="display:inline; width: 240px;margin-bottom: 0;" />
+				</p>
+
+			</div>
+			<!-- /col #2 -->
+
+		</div>
+
+	</div>
+
+	<div class="copyright has-social">
+		<div class="container">
+
+			<!-- Social Icons -->
+			<div class="float-right" style="display:none;">
+				<a href="#" class="social-icon social-icon-sm social-icon-transparent social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+					<i class="icon-facebook"></i>
+					<i class="icon-facebook"></i>
+				</a>
+
+				<a href="#" class="social-icon social-icon-sm social-icon-transparent social-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+					<i class="icon-twitter"></i>
+					<i class="icon-twitter"></i>
+				</a>
+
+				<a href="#" class="social-icon social-icon-sm social-icon-transparent social-gplus" data-toggle="tooltip" data-placement="top" title="Google plus">
+					<i class="icon-gplus"></i>
+					<i class="icon-gplus"></i>
+				</a>
+
+				<a href="#" class="social-icon social-icon-sm social-icon-transparent social-linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin">
+					<i class="icon-linkedin"></i>
+					<i class="icon-linkedin"></i>
+				</a>
+
+				<a href="#" class="social-icon social-icon-sm social-icon-transparent social-rss" data-toggle="tooltip" data-placement="top" title="Rss">
+					<i class="icon-rss"></i>
+					<i class="icon-rss"></i>
+				</a>
+			</div>
+			<!-- /Social Icons -->
+
+			<div class="copyright-text float-left">
+				&copy; 2018 DERECHOS RESERVADOS AGROKASA S.A / EL USO DE ESTA PAGINA CONSTITUYE LA ACEPTACIÓN DE LOS TÉRMINOS Y PRIVACIDAD
+			</div>
+		</div>
+	</div>
+
+</footer>
+			<!-- /FOOTER -->
+
+
+
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+
+	</body>
+</html>
